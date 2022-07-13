@@ -1,19 +1,6 @@
 <?php
-/*
- * Register sidebars
- */
-function register_ai_child_starter_theme_sidebars() {
-	
-	register_sidebar(array( 
-	   'name' => 'My Custom Sidebar',
-	   'id'=>'my-custom-sidebar',
-	   'before_widget' => '',
-	   'after_widget' => '',
-	   'before_title' => '',
-	   'after_title' => ''
-    ));
-	
-}
+
+include("inc/widgets.php");
 
 add_action( 'widgets_init', 'register_ai_child_starter_theme_sidebars', 11 );
 

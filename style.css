@@ -14,6 +14,7 @@ Template: aios-starter-theme
 
 TABLE OF CONTENTS
 
+0. Imports
 1. Variables
 2. Custom CSS
 3. IP styles
@@ -23,19 +24,29 @@ TABLE OF CONTENTS
 
 /*******************************************************
  *
+ * 0. Imports
+ *
+ *******************************************************/
+ @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/*******************************************************
+ *
  * 1. Variables
  *
  *******************************************************/
 
 :root {
     /** Font default */
-    --font-family-default: 'Open Sans', sans-serif;
-    --font-family-title: 'Noto Serif', serif;
+    --font-barlow: 'Barlow', sans-serif;
+    --font-raleway: 'Raleway', sans-serif;
+    --font-family-default: var(--font-raleway);
+    --font-family-title: var(--font-barlow);
     --font-size-default: 14px;
     --font-size-title: 18px;
     --font-color-default: #000000;
     --font-color-title: #6c757d;
-    
+
     /** Use for input, button, and any other element */
     --primary: #007bff;
     --secondary: #6c757d;
